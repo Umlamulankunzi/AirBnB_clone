@@ -75,4 +75,9 @@ class FileStorage:
                 self.__objects[key] = obj_class(**value)
 
     def delete_obj(self, obj_key: str):
+        """deletes an instance
+
+        Args:
+            obj_key (str): key of instance
+        """
         del self.__objects[obj_key]

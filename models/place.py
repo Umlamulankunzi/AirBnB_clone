@@ -6,6 +6,7 @@ from models.base_model import BaseModel
 
 
 class Place(BaseModel):
+    """Place class that inherits from BaseModel class"""
 
     city_id: str = ""      # empty string: it will be the City.id
     user_id: str = ""      # empty string: it will be the User.id
