@@ -14,7 +14,7 @@ from models.state import State
 from models.user import User
 
 
-CLASSES: dict = {
+CLASSES = {
     "Amenity": Amenity, "BaseModel": BaseModel,
     "City": City, "Place": Place, "Review": Review,
     "State": State, "User": User
@@ -29,12 +29,12 @@ class HBNBCommand(cmd.Cmd):
         """Empty command"""
         pass
 
-    def do_EOF(self, line: str) -> bool:
+    def do_EOF(self, line):
         """Handles the EOF character input"""
         print()
         return True
 
-    def do_quit(self, line: str) -> bool:
+    def do_quit(self, line):
         """Exits the program"""
         return True
 
@@ -44,7 +44,7 @@ class HBNBCommand(cmd.Cmd):
     # A string argument with a space must be between double quote
     # The error management starts from the first argument to the last one
 
-    def do_create(self, line: str):
+    def do_create(self, line):
         """Creates a new instance of BaseModel,
 
         saves it (to the JSON file) and prints the id
@@ -68,7 +68,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** class doesn't exist **")
 
-    def do_show(self, line: str):
+    def do_show(self, line):
         """ Prints the string representation of an instance
 
         based on the class name and id.
@@ -117,7 +117,7 @@ class HBNBCommand(cmd.Cmd):
                 else:
                     print("** no instance found **")
 
-    def do_destroy(self, line: str):
+    def do_destroy(self, line):
         """Deletes an instance based on the class name and id
 
         (save the change into the JSON file).
@@ -164,7 +164,7 @@ class HBNBCommand(cmd.Cmd):
                 else:
                     print("** no instance found **")
 
-    def do_all(self, line: str):
+    def do_all(self, line):
         """Prints all string representation of all instances based or
 
         not on the class name.
@@ -200,7 +200,7 @@ class HBNBCommand(cmd.Cmd):
 
         print(str_objs_list)
 
-    def do_update(self, line: str):
+    def do_update(self, line):
         """ Updates an instance based on the class name and id by adding or
 
         updating attribute (save the change into the JSON file).
@@ -295,7 +295,7 @@ class HBNBCommand(cmd.Cmd):
             key for key in storage.all() if key.startswith(cls_name)]
         return len(objects)
 
-    def default(self, line: str):
+    def default(self, line):
         """class_name.command(parameters)"""
 
         exec_cmds = (
