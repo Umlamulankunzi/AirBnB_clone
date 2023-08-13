@@ -1,7 +1,7 @@
-
+#!/usr/bin/python3
 
 """
-Module defining BaseModel class, which is a parent class to most of 
+Module defining BaseModel class, which is a parent class to most of
 models package classes.
 """
 
@@ -49,7 +49,7 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        """Converts a dictionary containing all keys/values of 
+        """Converts a dictionary containing all keys/values of
 
         Returns:
             dict: attributes of instance object
@@ -76,9 +76,9 @@ class BaseModel:
         return f"[{self.__class__.__name__}] ({self.id }) {self.__dict__}"
 
     def __setattr__(self, key, value):
-        """Work in progress: this magic method is called when an attribute 
+        """Work in progress: this magic method is called when an attribute
 
-        of an instance is created or its value updated. So I hope to use 
+        of an instance is created or its value updated. So I hope to use
         this method to know when an attribute is updated, so as I can update
         the updated_at attribute of the instance.
 

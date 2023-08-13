@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module Defining Place class"""
 
 
 from models.base_model import BaseModel
@@ -16,4 +17,4 @@ class Place(BaseModel):
     price_by_night: int = 0
     latitude: float = 0.0
     longitude: float = 0.0
-    amenity_ids: list[str] = [] # will be list of Amenity.id later
+    amenity_ids: list[str] = []  # will be list of Amenity.id later
