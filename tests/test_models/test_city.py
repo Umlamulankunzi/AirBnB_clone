@@ -10,7 +10,7 @@ from models.city import City
 class TestCity(unittest.TestCase):
     def setUp(self):
         self.city = City()
-    
+
     def test_inheritance(self):
         self.assertIsInstance(self.city, BaseModel)
 
