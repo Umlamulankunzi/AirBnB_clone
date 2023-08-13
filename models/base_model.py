@@ -67,7 +67,7 @@ class BaseModel:
 
         return instance_dict
 
-    def __str__(self) -> str:
+    def __str__(self):
         """Returns string represantion of instance
 
         Returns:
