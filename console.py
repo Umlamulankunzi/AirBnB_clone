@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""
+Module that defines the command console class
+"""
 
 import ast
 import cmd
@@ -22,6 +25,7 @@ CLASSES = {
 
 
 class HBNBCommand(cmd.Cmd):
+    """HBNBCommand class that inherits from cmd.Cmd class"""
 
     prompt = "(hbnb) "
 
