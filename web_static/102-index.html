@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/102-common.css">
+    <link rel="stylesheet" href="styles/102-header.css">
+    <link rel="stylesheet" href="styles/102-footer.css">
+    <link rel="stylesheet" href="styles/102-filters.css">
+    <link rel="stylesheet" href="styles/102-places.css">
+    <title>AirBnB clone</title>
+  </head>
+  <body>
+    <header>
+       <!-- MOBILE NAV -->
+      <div class="mobile_nav">
+        <label for="main_check" class="main_nav_burguer">|||</label>
+        <input type="checkbox" id="main_check" name="main_check" class="main_nav_check">
+          <nav>
+              <ul class="nav_bar_level1">
+                <li>
+                    <label for="second_check"><span>States</span></label>
+                    <input type="checkbox" name="second_check" id="second_check">
+                  <ul>
+                    <li><span>Arizona</span></li>
+                    <li><span>California</span></li>
+                  </ul>
+                  </li>
+                <li>
+                  <label for="third_check"><span>Amenities</span></label>
+                  <input type="checkbox" name="second_check" id="third_check">
+                  <ul>
+                    <li><span>Internet</span></li>
+                    <li><span>Tv</span></li>
+                    <li><span>Wifi</span></li>
+                    <li><span>Kitchen</span></li>
+                    <li><span>Iron</span></li>
+                  </ul>
+                  </li>
+              </ul>
+        </nav>
+        <!-- END OF MOBILE NAV -->
+      </div>
+    </header>
+    <div class="container">
+      <section class="filters">
+        <div class="locations">
+          <h3>States</h3>
+          <h4>California, Arizona...</h4>
+          <ul class="popover">
+            <li><h2>Arizona:</h2>
+              <ul>
+                <li>Page</li>
+                <li>Page2</li>
+              </ul>
+            </li>
+            <li><h2>California:</h2>
+              <ul>
+                <li>San Francisco</li>
+                <li>Los Altos</li>
+              </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="amenities">
+          <h3>Amenities</h3>
+          <h4>Internet, Kitchen...</h4>
+          <ul class="popover">
+            <li>Internet</li>
+            <li>Tv</li>
+            <li>Kitchen</li>
+            <li>Iron</li>
+          </ul>
+        </div>
+        <button type="button" name="button">Search</button>
+      </section>
+
+      <section class="places">
+        <h1>Places</h1>
+        <article>->
+          <div class="article_places_header">
+            <h2>My home</h2>
+            <div class="price_by_night">$80</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Bob the Builder</p>
+          </div>
+          <div class="description">
+            <p>
+              This is a lovely 1 bedroom and 1 bathroom apartment that can
+              accomodate 2 people. It is located at the center of Shanghai
+              and next to subway line 1, 1 stop to People Square, 2 stops
+              to Bund, and 3 stops to Jingan Temple.
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Bob Dylan the 27th August 2022</h3>
+                <p>Bob is an epic host. Nothing more I can say. 5 stars!</p>
+              </li>
+              <li>
+                <h3>From John Connor 4th August 2022</h3>
+                <p>The Resistance Highly recommendeds!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>Tiny house</h2>
+          <div class="price_by_night">$65</div>
+          <div class="information">
+            <div class="max_guest">4 Guests</div>
+            <div class="number_rooms">2 Bedrooms</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Naruto Uzumaki</p>
+          </div>
+          <div class="description">
+            <p>
+              This is a cozy abode is designed to maximize space while providing
+              all the comforts you need. With a comfortable seating area, compact
+              kitchenette, and a sleeping loft with a plush queen-size bed, it's
+              the perfect escape for tranquility and simplicity. Enjoy the
+              natural light flooding through the large windows and wake up to
+              breathtaking views of the surrounding trees.
+              Located in a secluded spot, it offers privacy while being close to
+              hiking trails and outdoor activities.
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Mad Max the 15th August 2022</h3>
+                <p>Naruto is an epic host. Nothing more I can say. 5 stars!</p>
+              </li>
+              <li>
+                <h3>From John Connor 4th August 2022</h3>
+                <p>The terminators couldn't get enough of the experience!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>A suite</h2>
+          <div class="price_by_night">$190</div>
+          <div class="information">
+            <div class="max_guest">5 Guests</div>
+            <div class="number_rooms">3 Bedroom</div>
+            <div class="number_bathrooms">2 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Optimus Prime</p>
+          </div>
+          <div class="description">
+            <p>
+              This is a spacious 3-bedroom suite, perfect for families or
+              groups of up to 5 guests. The suite features a beautifully
+              designed living area with comfortable seating and modern
+              amenities. The three bedrooms offer a variety of sleeping
+              arrangements, including a king-size bed, a queen-size bed,
+              and a twin bed. The suite also boasts two luxurious
+              bathrooms, complete with premium toiletries and relaxing
+              showers. Enjoy the convenience of a fully equipped kitchen
+              and a dining area for shared meals. Book your stay today
+              and experience the ultimate in comfort and convenience!
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Iron Hide the 15th August, 2022</h3>
+                <p>I love this place. Prime sure knows what luxury is!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>Surburban House</h2>
+          <div class="price_by_night">$50</div>
+          <div class="information">
+            <div class="max_guest">3 Guests</div>
+            <div class="number_rooms">2 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Bumblebee</p>
+          </div>
+          <div class="description">
+            <p>
+              This is lovely 2-bedroom suite, with 1 bathroom and
+              accommodates 3 guests. It features a number of modern amenities.
+              The two bedrooms offer a variety of sleeping arrangements,
+              including a king-size bed and a queen-size bed. The suite
+              also boasts a luxurious bathrooms, complete with toiletries.
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Star-Scream the 10th July, 2022</h3>
+                <p>A quaint abode, the scout has outdone himself.</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>Townhouse Flat</h2>
+          <div class="price_by_night">$65</div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Rock Lee</p>
+          </div>
+          <div class="description">
+            <p>
+              This is lovely 1-bedroom flat, with 1 bathroom can
+              accommodate 2 guests. It features the basic amenities.
+              The single bedroom offers a comfortable sleeping arrangement,
+              it includes a king-size bed.
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Ten-Ten the 27th July, 2022</h3>
+                <p>Simple and elegant!.</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>3 Bed Apartment</h2>
+          <div class="price_by_night">$150</div>
+          <div class="information">
+            <div class="max_guest">6 Guests</div>
+            <div class="number_rooms">3 Bedrooms</div>
+            <div class="number_bathrooms">2 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Tsuchikage</p>
+          </div>
+          <div class="description">
+            <p>
+              This is 3 Bed Apartment is designed to maximize space while providing
+              all the comforts you need. With a comfortable seating area, compact
+              kitchenette, and a sleeping loft with a plush queen-size beds in every room.
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Ben 10 the 18th August 2023</h3>
+                <p>The Tsuchikage is an epic host. Nothing more I can say. 5 stars!</p>
+              </li>
+              <li>
+                <h3>From Sarah Connor 7th August 2023</h3>
+                <p>The terminators couldn't get enough of the experience!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+      </section>
+    </div>
+    <footer>
+      <p>Best School</p>
+    </footer>
+  </body>
+</html>
